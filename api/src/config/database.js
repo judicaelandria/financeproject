@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 async function connectToDatabase() {
   await mongoose
-    .connect("mongodb://localhost:27017/finance", {
+    .connect("mongodb+srv://admin:admin@cluster0.gc0rs.mongodb.net/finances?retryWrites=true&w=majority", {
       useCreateIndex: true,
       useNewUrlParser: true,
       useUnifiedTopology: true,
